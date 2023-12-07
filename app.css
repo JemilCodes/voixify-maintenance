@@ -38,27 +38,24 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  padding: 25px;
+  padding: 50px;
 }
 
 .logo {
   position: absolute;
   top: 25px;
-  left: 25px;
+  left: 50px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 .logo > img {
-  width: 65px;
+  width: 80px;
   height: 65px;
 }
 .logo > p {
   font-family: gorditaBold;
-  font-size: 34px;
-  font-weight: 800;
-  line-height: 24px;
-  letter-spacing: 0.2px;
+  font-size: 30px;
   color: #005d72;
 }
 
@@ -86,18 +83,30 @@
   color: #65676b8f;
 }
 .page-btn {
-  outline: none;
-  border: none;
   border-radius: 25px;
-  width: 100px;
-  height: 40px;
-  font-family: gorditaBold;
+  font-family: barlow;
   color: white;
   background-color: #005d72;
   cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  max-width: 250px;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 490px) {
+  .wrap {
+    padding: 15px;
+  }
+
+  .logo {
+    top: 15px;
+    left: 15px;
+  }
+
   .content-1 {
     min-width: 70%;
   }
@@ -105,12 +114,29 @@
     font-family: barlow;
     font-size: 25px;
     font-weight: 600;
-    margin-bottom: 20px;
-    color: #65676b8f;
   }
   .setting-img {
     width: 300px;
     height: 300px;
+  }
+  .page-btn {
+    max-width: 200px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .page-btn {
+    font-size: 12px;
+    max-width: 150px;
+  }
+  .bigText {
+    font-size: 30px;
+    margin-bottom: 1px;
+  }
+  .bigText2 {
+    font-size: 15px;
+    margin-bottom: 1px;
   }
 }
 
